@@ -7,6 +7,9 @@ variables:
 
 build:
   stage: build
+  cache:
+    paths:
+      - code/build
   script:
     - cd code
     - idf.py build
